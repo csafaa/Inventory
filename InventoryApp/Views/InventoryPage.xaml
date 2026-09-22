@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="InventoryApp.Views.InventoryPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Inventory">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <ActivityIndicator
+            Grid.Row="0"
+            Margin="10"
+            IsRunning="{Binding IsBusy}"
+            IsVisible="{Binding IsBusy}" />
+
+        <CollectionView
+            Grid.Row="1"
+            ItemsSource="{Binding Items}"
+            SelectionMode="Single"
+            SelectionChanged="OnItemSelected">
+
+            <CollectionView.ItemTemplate>
+
+                <DataTemplate>
+
+                    <Grid
+                        Padding="15"
+                        ColumnDefinitions="*,Auto">
+
+                        <VerticalStackLayout>
+
+                            <Label
+                                Text="{Binding ItemName}"
+                                FontSize="18"
+                                FontAttributes="Bold" />
+
+                            <Label
+                                Text="{Binding LastUpdated,
+                                               StringFormat='Last updated: {0:G}'}"
+                                FontSize="12" />
+
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout
+                            Grid.Column="1"
+                            HorizontalOptions="End">
+
+                            <Label
+                                Text="Quantity"
+                                FontSize="12" />
+
+                            <Label
+                                Text="{Binding CurrentQuantity}"
+                                FontSize="22"
+                                FontAttributes="Bold" />
+
+                        </VerticalStackLayout>
+
+                    </Grid>
+
+                </DataTemplate>
+
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InventoryApp</name>
+    </assembly>
+    <members>
+        <member name="T:InventoryApp.Models.InventoryItem">
+            <inheritdoc/>
+        </member>
+        <member name="P:InventoryApp.Models.InventoryItem.ItemId">
+            <inheritdoc cref="F:InventoryApp.Models.InventoryItem.itemId"/>
+        </member>
+        <member name="P:InventoryApp.Models.InventoryItem.ItemName">
+            <inheritdoc cref="F:InventoryApp.Models.InventoryItem.itemName"/>
+        </member>
+        <member name="P:InventoryApp.Models.InventoryItem.CurrentQuantity">
+            <inheritdoc cref="F:InventoryApp.Models.InventoryItem.currentQuantity"/>
+        </member>
+        <member name="P:InventoryApp.Models.InventoryItem.LastUpdated">
+            <inheritdoc cref="F:InventoryApp.Models.InventoryItem.lastUpdated"/>
+        </member>
+        <member name="T:InventoryApp.ViewModels.InventoryDetailViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:InventoryApp.ViewModels.InventoryDetailViewModel.Item">
+            <inheritdoc cref="F:InventoryApp.ViewModels.InventoryDetailViewModel.item"/>
+        </member>
+        <member name="P:InventoryApp.ViewModels.InventoryDetailViewModel.Quantity">
+            <inheritdoc cref="F:InventoryApp.ViewModels.InventoryDetailViewModel.quantity"/>
+        </member>
+        <member name="P:InventoryApp.ViewModels.InventoryDetailViewModel.IsBusy">
+            <inheritdoc cref="F:InventoryApp.ViewModels.InventoryDetailViewModel.isBusy"/>
+        </member>
+        <member name="M:InventoryApp.ViewModels.InventoryDetailViewModel.OnItemChanged(InventoryApp.Models.InventoryItem)">
+            <summary>Executes the logic for when <see cref="P:InventoryApp.ViewModels.InventoryDetailViewModel.Item"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:InventoryApp.ViewModels.InventoryDetailViewModel.Item"/> is changed.</remarks>
+        </member>
+        <member name="F:InventoryApp.ViewModels.InventoryDetailViewModel.saveCommand">
+            <summary>The backing field for <see cref="P:InventoryApp.ViewModels.InventoryDetailViewModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:InventoryApp.ViewModels.InventoryDetailViewModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:InventoryApp.ViewModels.InventoryDetailViewModel.SaveAsync"/>.</summary>
+        </member>
+        <member name="T:InventoryApp.ViewModels.InventoryListViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:InventoryApp.ViewModels.InventoryListViewModel.IsBusy">
+            <inheritdoc cref="F:InventoryApp.ViewModels.InventoryListViewModel.isBusy"/>
+        </member>
+        <member name="F:InventoryApp.ViewModels.InventoryListViewModel.loadCommand">
+            <summary>The backing field for <see cref="P:InventoryApp.ViewModels.InventoryListViewModel.LoadCommand"/>.</summary>
+        </member>
+        <member name="P:InventoryApp.ViewModels.InventoryListViewModel.LoadCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:InventoryApp.ViewModels.InventoryListViewModel.LoadAsync"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ItemId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ItemId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ItemName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ItemName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentQuantity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentQuantity" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.LastUpdated">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "LastUpdated" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Item">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Item" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Quantity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Quantity" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ItemId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ItemId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ItemName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ItemName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentQuantity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentQuantity" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.LastUpdated">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "LastUpdated" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Item">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Item" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Quantity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Quantity" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1 @@
+C:\sources5\InventoryApp\InventoryApp\InventoryApp.csproj;x64
